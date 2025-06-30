@@ -60,7 +60,6 @@ This project was a great culmination of everything I learned in CS50—from rout
 
 The AI Article Summarizer is a functional, scalable, and practical tool that applies CS50 principles to solve a modern problem using modern technology.
 
-# YouTube Video URL : https://youtu.be/6T6rfL29anE
 # Features
 
 - Web scraping using `newspaper3k`
