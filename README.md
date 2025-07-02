@@ -11,7 +11,7 @@ Once the article content is obtained, it’s passed to a transformer-based summa
 
 The app interface is kept minimal and clean, following modern web design principles. Users are greeted with a logo, a short title, a URL input box, and a “Summarize” button. After submission, the app fetches and displays the article’s title and its AI-generated summary.
 
-#Technology Stack
+# Technology Stack
 Frontend: HTML, CSS (with minimal custom styling), Jinja2 templates
 
 Backend: Python with Flask
@@ -24,14 +24,14 @@ Deployment Ready: Works locally and can be deployed on platforms like Render or 
 
 To ensure performance and minimize complexity, the summarization is done using a pre-trained model loaded directly from Hugging Face's model hub. While the response time may vary depending on model size, inference happens within a few seconds even without GPU acceleration.
 
-#Challenges and Learning Outcomes
+# Challenges and Learning Outcomes
 One of the early challenges I faced was integrating AI models with real-time user input. Working with Hugging Face's transformers was straightforward, but I had to manage dependencies like torch, nltk, and lxml, and ensure that the required tokenizer data (e.g., punkt) was properly downloaded to avoid runtime errors.
 
 Another learning point was understanding the difference between extractive summarization and abstractive summarization. While earlier versions of the app simply shortened the article (extractive), this final version uses transformer-based models that generate entirely new sentences that capture the article’s essence, making it much more intelligent and useful.
 
 Additionally, I learned to handle errors gracefully, such as invalid URLs, missing article content, or network issues during scraping or inference. I also experimented with multiple AI models to balance performance and summary quality, including t5-small for quicker results and bart-large-cnn for more accurate outputs.
 
-#Use Cases and Impact
+# Cases and Impact
 The tool has several practical applications:
 
 Students can use it to summarize academic articles or blog posts for quick reference.
@@ -42,7 +42,7 @@ Researchers can test it with various domains to extract key points from papers o
 
 As content continues to grow online, such summarization tools can significantly reduce information overload and make knowledge more accessible.
 
-#Future Improvements
+# Future Improvements
 Although the current version works well, there are several improvements I’d like to explore:
 
 GPU Acceleration: Enable local GPU inference for faster summarization
@@ -55,7 +55,7 @@ Downloadable Output: Enable users to export summaries as PDF or text files
 
 Mobile Optimization & UI Enhancements: Make the interface even more responsive and professional-looking
 
-#Conclusion
+# Conclusion
 This project was a great culmination of everything I learned in CS50—from routing and HTML templating to integrating advanced machine learning models into a web app. It challenged me to combine frontend and backend development with real-world APIs and AI systems, while also focusing on user experience and performance.
 
 The AI Article Summarizer is a functional, scalable, and practical tool that applies CS50 principles to solve a modern problem using modern technology.
