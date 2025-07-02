@@ -4,7 +4,7 @@ For my CS50 final project, I created a web-based application called AI Article S
 
 The motivation behind this project stemmed from the increasing volume of online content and the limited time users have to read it. With the rising accessibility of powerful natural language processing (NLP) models, I wanted to explore how these AI tools could be applied to real-world use cases. Text summarization is a common NLP task, and it seemed like an ideal challenge to tackle using the tools and programming skills I’ve acquired throughout the CS50 course.
 
-#Functionality
+# Functionality
 The AI Article Summarizer accepts a URL as input, fetches the article’s main content using web scraping, processes the extracted text using an AI model, and returns a short summary to the user. It’s built using the Flask web framework in Python, which manages routing, form input, and response rendering. For scraping, the app uses the newspaper3k library, a robust tool for parsing article content, removing boilerplate, and cleaning HTML noise.
 
 Once the article content is obtained, it’s passed to a transformer-based summarization model from Hugging Face’s transformers library—specifically, models like facebook/bart-large-cnn or t5-small. These models are capable of understanding large amounts of text and generating meaningful abstractive summaries, not just shortened versions of the text.
