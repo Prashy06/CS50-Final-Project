@@ -1,6 +1,6 @@
 Flask==2.3.3
 transformers==4.40.1
 newspaper3k==0.2.8
-torch==2.3.0
+torch
 lxml==5.2.1
 nltk==3.8.1
