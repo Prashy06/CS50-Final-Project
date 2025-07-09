@@ -1,6 +1,6 @@
 Flask==2.3.3
-transformers==4.39.3
-tokenizers==0.13.3
+transformers==4.36.2
+tokenizers==0.15.1
 newspaper3k==0.2.8
 torch
 lxml==5.2.1
