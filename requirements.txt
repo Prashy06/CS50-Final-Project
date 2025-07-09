@@ -3,5 +3,6 @@ transformers==4.36.2
 tokenizers==0.15.1
 newspaper3k==0.2.8
 torch
+gunicorn
 lxml==5.2.1
 nltk==3.8.1
